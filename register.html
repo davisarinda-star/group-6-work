@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fa-solid fa-graduation-cap logo-icon"></i>
+          <div class="logo-text">
+            <span class="logo-title">University</span>
+            <span class="logo-sub">Portal</span>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <div class="registration-card">
+        <h2>Student Registration Portal</h2>
+        <p class="subtitle">
+          Create your account to access the student portal.
+        </p>
+
+        <form class="registration-form">
+          <div class="input-group">
+            <input type="text" placeholder="Full Name"/>
+          </div>
+
+          <div class="input-group">
+            <input type="text" placeholder="Registration Number"/>
+          </div>
+
+          <div class="input-group">
+            <input type="email" placeholder="Email Address"/>
+          </div>
+
+          <div class="gender-section">
+            <label class="gender-label">Gender</label>
+            <div class="radio-group">
+              <label class="radio-container">
+                <input type="radio" name="gender" value="male" checked />
+                <span class="checkmark"></span> Male
+              </label>
+              <label class="radio-container">
+                <input type="radio" name="gender" value="female" />
+                <span class="checkmark"></span> Female
+              </label>
+            </div>
+          </div>
+
+          <div class="split-row">
+            <div class="select-group">
+              <div class="select-label">Course of Study</div>
+              <div class="select-wrapper">
+                <select>
+                  <option value="">Select Course</option>
+                  <option value="cs">Computer Science</option>
+                  <option value="eng">Engineering</option>
+                  <option value="biz">Business Administration</option>
+                </select>
+              </div>
+            </div>
+            <div class="select-group">
+              <div class="select-label">Year of Study</div>
+              <div class="select-wrapper">
+                <select>
+                  <option value="">Select Year</option>
+                  <option value="1">Year 1</option>
+                  <option value="2">Year 2</option>
+                  <option value="3">Year 3</option>
+                  <option value="4">Year 4</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <input type="password" placeholder="Password"/>
+          </div>
+
+          <div class="input-group">
+            <input type="password" placeholder="Confirm Password"/>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            REGISTER NOW
+          </button>
+        </form>
+
+        <div class="form-footer">
+          Already have an account? <a href="login.html">Log In</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQs</a>
+      </div>
+      <div class="copyright">&copy; 2026 University Portal</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
